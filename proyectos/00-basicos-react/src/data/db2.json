@@ -1,0 +1,72 @@
+[
+      {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "price": 99.99,
+        "tags": ["electronics", "audio", "wireless"],
+        "img": "https://example.com/images/headphones.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Gaming Mouse",
+        "price": 49.99,
+        "tags": ["electronics", "gaming", "accessories"],
+        "img": "https://example.com/images/mouse.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Yoga Mat",
+        "price": 25.99,
+        "tags": ["fitness", "yoga", "equipment"],
+        "img": "https://example.com/images/yogamat.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Smartphone",
+        "price": 699.99,
+        "tags": ["electronics", "mobile", "smartphone"],
+        "img": "https://example.com/images/smartphone.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Running Shoes",
+        "price": 120.00,
+        "tags": ["fitness", "shoes", "running"],
+        "img": "https://example.com/images/runningshoes.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Backpack",
+        "price": 45.99,
+        "tags": ["accessories", "travel", "bag"],
+        "img": "https://example.com/images/backpack.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Smartwatch",
+        "price": 199.99,
+        "tags": ["electronics", "wearable", "smartwatch"],
+        "img": "https://example.com/images/smartwatch.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Desk Lamp",
+        "price": 35.99,
+        "tags": ["furniture", "lighting", "desk"],
+        "img": "https://example.com/images/desklamp.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Bluetooth Speaker",
+        "price": 89.99,
+        "tags": ["electronics", "audio", "wireless"],
+        "img": "https://example.com/images/speaker.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Electric Kettle",
+        "price": 39.99,
+        "tags": ["kitchen", "appliance", "electric"],
+        "img": "https://example.com/images/kettle.jpg"
+      }
+]
