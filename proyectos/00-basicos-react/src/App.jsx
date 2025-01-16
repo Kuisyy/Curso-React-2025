@@ -9,6 +9,7 @@ import Nieto2 from "./components/UseState/props2/Nieto2";
 import Padre2 from "./components/UseState/props2/Padre2";
 import RegistrarFormulario from "./components/UseState/RegistrarFormulario";
 import CardsPlaceHolder from "./components/useEffectsCicloVida/CardsPlaceHolder";
+import ProductList from "./components/useEffects/ProductList";
 const App = () => {
   return (    
     <div className=" mx-auto bg-purple-700">
@@ -32,8 +33,9 @@ const App = () => {
       </Padre2> */}
       <hr className="mt-8 font-bold"></hr>
       {/* <Timer /> */}
-      <CardsPlaceHolder />
-
+      {/* <CardsPlaceHolder /> */}
+      <ProductList />
+ 
     </div>
   );
 };
