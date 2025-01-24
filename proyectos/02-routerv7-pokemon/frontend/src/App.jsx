@@ -1,6 +1,14 @@
+import { RouterProvider } from 'react-router-dom';
+import  router  from './routes/router';
+import { Toaster } from 'sonner';
+
 const App = () => {
   return (
-    <div className='text-orange-500 text-xl'>App</div>
+    <>
+      <Toaster position='top-right' duration={2000} />
+      <RouterProvider router={router} />
+    </>
+    
   )
 }
 
