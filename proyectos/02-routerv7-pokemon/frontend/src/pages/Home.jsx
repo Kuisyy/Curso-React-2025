@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { usePokemon } from "../context/PokemonContext";
+import Spinner from "../components/Spinner";
 
 const Home = () => {
+  const { addToFav} = usePokemon();
     const [pokemons, setPokemons] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -41,7 +44,7 @@ const Home = () => {
 
 
     if(isLoading){
-        return <div>Loading...</div>
+        return <div className="flex justify-center items-center h-screen"><Spinner /></div>
     }
     
 
@@ -55,13 +58,13 @@ const Home = () => {
             pokemons.map(pokemon =>(
                 <div key={pokemon.id} className="bg-white shado-md rounded-md p-6">
                     <div className="relative-group">
-                        <img src={pokemon.sprites.front_default} alt={pokemon.name} className="w-32 h-32 mx-auto transform group-hover:scale-110 transition-transform duration-500" />
+                        <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} className="w-32 h-32 mx-auto transform group-hover:scale-110 transition-transform duration-500" />
                     </div>
                     <h2 className="text-xl font-semibold text-center capitalize mt-2 ">{pokemon.name}</h2>
 
                     <div className="flex justify-center space-x-2 mt-4">
                         <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-800 "
-                        // viene en contexto onClick={}
+                        onClick={()=> addToFav(pokemon)}
                         >Añadir favs
                         </button>
 

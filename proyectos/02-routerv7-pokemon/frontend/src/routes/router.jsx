@@ -30,6 +30,13 @@ const router = createBrowserRouter([
             element:<PokemonDetailPage />,
             errorElement: <ErrorPage />,
             //loader: Loader permite hacer un fecth directo a la ruta
+            loader: async ({params})=>{
+                const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${params.name}`);
+                if (!response.ok){
+                    console.error("Error en la api de detalle");
+                }
+                return await response.json();
+            }
         },
         {
             path:ROUTES.ABOUT,

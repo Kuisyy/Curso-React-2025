@@ -8,9 +8,14 @@ const catchAsync = (fn)=>(req,res,next)=>{
     Promise.resolve(fn(req,res,next)).catch(next);
 };
 
-const register = ()=>{
-    
-};
+export const register = catchAsync (async(req,res)=>{
+    //destructuruning del body para datos
+    const { email, password }= req.body;
+    //validamos email y pass
+    await AuthService.register(email,password);
+    //Mensaje de exitos
+    res.status(201).json({message:"Usuario encontrado con exito"});
+})
 
 
 const login = ()=>{
