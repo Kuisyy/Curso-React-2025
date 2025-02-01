@@ -1,5 +1,5 @@
 import { Link, Outlet, useNavigate } from "react-router-dom"
-import isAuthenticated from "../helpers/isAutheticated";
+import isAuthenticated from "../helpers/isAuthenticated";
 
 const RootLayout = () => {
     const navigate = useNavigate();

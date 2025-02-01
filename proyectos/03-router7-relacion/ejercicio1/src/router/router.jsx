@@ -7,7 +7,7 @@ import Dashboard from "../pages/Dashboard";
 import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
 import RootLayout from "../layout/RootLayout";
-import isAuthenticated from "../helpers/isAutheticated";
+import isAuthenticated from "../helpers/isAuthenticated";
 
 
 
