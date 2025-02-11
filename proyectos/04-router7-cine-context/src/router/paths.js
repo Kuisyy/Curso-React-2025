@@ -1,6 +1,6 @@
 export const ROUTES = {
     HOME:'/',
-    SEARCH:'/movies/:id',
+    SEARCH:'/movie/:id',
     FAVOURITES:'/favourites',
     MOVIELIST:'/movies',
     REVIEWS:'/reviews',

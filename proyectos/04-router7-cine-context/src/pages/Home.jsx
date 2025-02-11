@@ -3,6 +3,7 @@ import { useState } from "react";
 import MovieCard from "../components/MovieCard";
 import { useFetch } from "../hooks/useFetch";
 import { getPopularMovies } from "../services/tmdb";
+import { PacmanLoader } from "react-spinners";
 
 const Home = () => {
     // Estado para el número de página
@@ -16,6 +17,11 @@ const Home = () => {
     const handlePrevPage = () => {
         if (page > 1) setPage((prev) => prev - 1);
     };
+
+    // const handlePageChange =(newPage)=>{
+    //     window.scrollTo({top:0,behavior:"smooth"});
+    //     setPage(newPage);
+    // }
 
     if (error) {
         return (
@@ -45,7 +51,10 @@ const Home = () => {
                 </div>
 
                 {loading ? (
-                    <div className="text-center">Cargando Películas...</div>
+                    <PacmanLoader
+                    color="#e3ff00"
+                    margin={10}
+                  />
                 ) : (
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                         {data?.results.map((movie) => (
